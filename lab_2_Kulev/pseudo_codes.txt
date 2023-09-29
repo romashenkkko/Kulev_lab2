@@ -1,0 +1,38 @@
+create a void function for implementing Bubble sort algorithm
+with the array and the number of elements in array
+
+    for each element i in arr, we check if it has been done a sortation,
+    and we add +1 to the value of CHANGE variable;
+        for each element j in arr we check if arr[j] is bigger then next element,
+        and in case it is, we change their places and assign a new value arr[j + 1] to TEMP;
+    if the list is sorted, we break the loop;
+ 
+call bubbleSort(arr, n) in the main();
+
+CREATE a void function for implementing Selection sort algorithm
+with the array and the number of elements in array;
+    FOR each element i in arr, we assign a new
+     value to the minimal variable minVar;
+        FOR each element j = i + 1 ;
+            IF j < minVar we assign to minVar the value of j element
+            and then it is created a TEMP variable with temporary value 
+ CALL selectionSort(arr, n);
+        
+
+CREATE a void function for implementing Insertion sort algorithm
+    FOR each element i in arr, we assign a value to the temporary variable TEMP,
+    and assign to j one less i;
+        WHILE the value of j element will be greater then the TEMP value, we switch them
+        otherwise, the next element above j will be assign to TEMP
+ CALL insertionSort(arr, n);
+
+
+CREATE a void function change(int* a, int* b), where we introduce pointers,
+in purpose to change the variable values;
+CREATE a int function partition(int arr[], int low, int high) which will divise the array in subarrays
+    we have to introduce the PIVOT variable to compare the elements with this pivot element;
+    FOR elements in array, we have to compare them with the pivot, and then implement the change function;
+CREATE quickSort(int arr[], int low, int high);
+    IF the condition low < high is satisfied, we introduce the function PARTITION that will form some more subarrays,
+    then we use a recursive method: the function QUICKSORT is implementing itself till the array is sorted; 
+CALL quickSort(arr, 0, n - 1);
